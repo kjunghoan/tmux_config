@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-[Notes](#Notes)
-[Config](#tmux.conf)
-[Referenced Docs](#referenced-docs)
+- [Notes](#Notes)
+- [Config](#tmux.conf)
+- [Referenced Docs](#referenced-docs)
 
 ## Notes
 
