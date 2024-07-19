@@ -1,5 +1,7 @@
 # Current tmux configs
-1. (config)[#tmux.conf]
+
+## Table of Contents
+1. [config](#tmux.conf)
 
 
 ## tmux.conf
