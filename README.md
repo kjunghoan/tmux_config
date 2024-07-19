@@ -1,4 +1,6 @@
 # Current tmux configs
+ - (config)[#.tmux.conf]
+
 
 ## .tmux.conf
 ``` bash
