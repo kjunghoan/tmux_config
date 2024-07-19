@@ -1,8 +1,8 @@
 # Current tmux configs
- - (config)[#.tmux.conf]
+1. (config)[#tmux.conf]
 
 
-## .tmux.conf
+## tmux.conf
 ``` bash
 unbind r
 bind r source-file ~/.tmux.conf
