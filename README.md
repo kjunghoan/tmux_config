@@ -1,10 +1,18 @@
 # Current tmux configs
 
 ## Table of Contents
-1. [config](#tmux.conf)
 
+[Notes](#Notes)
+[Config](#tmux.conf)
+[Referenced Docs](#referenced-docs)
+
+## Notes
+
+- Currently there seems to be a problem with vim-tmux-navigator in my settings which causes neovim to not recognize my leader key ('<Space>')
+    - I might put this back in when this issue gets resolved but I have to Rollback the VM to test so for the time being that does not seem likely
 
 ## tmux.conf
+
 ``` bash
 unbind r
 bind r source-file ~/.tmux.conf
@@ -25,6 +33,10 @@ set-option -g status-position top
 # tpm
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
+
+# set -g @plugin 'christoomey/vim-tmux-navigator' # (for some reason causes where <Space> does not register)
+
+
 set -g @plugin 'catppuccin/tmux'
 # settings for catppuccin tmux 2
 # ref: https://github.com/catppuccin/tmux?tab=readme-ov-file#config-2
@@ -54,4 +66,21 @@ set -g @catppuccin_status_connect_separator "yes"
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
+# -----------------------------------------------------------------------------
+
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'github_username/plugin_name#branch'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
 ```
+
+
+## Referenced Docs
+- [tmux package manager (tpm)](https://github.com/tmux-plugins/tpm)
+- [catppuccin/tmux](https://github.com/catppuccin/tmux)
+- [vim-tmux-nav](https://github.com/christoomey/vim-tmux-navigator)
